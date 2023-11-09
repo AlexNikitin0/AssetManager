@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Asset {
+public abstract class Asset {
     protected String description,dateAcquired;
     protected double originalCost;
     //const
@@ -36,9 +36,9 @@ public class Asset {
     }
 
     //custom methods
-    public double getValue(){
-        return originalCost;
-    }
+     abstract double getValue();
+
+
 
 
 
